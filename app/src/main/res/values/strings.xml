@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NewRecyclerview</string>
+    <string name="title_font">标题</string>
+    <string name="network_error">网络连接不可用，请稍后重试</string>
+    <string name="double_click_exit">再按一次退出</string>
+    <string name="title">首页</string>
+</resources>

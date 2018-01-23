@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <com.example.yonghongtang.newrecyclerview.MyToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary" />
+
+
+    <FrameLayout
+        android:layout_above="@id/container"
+        android:layout_below="@id/toolbar"
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RadioGroup
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <RadioButton
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/home_selector"
+            android:gravity="center"
+            android:text="Home"
+            android:textColor="@color/font_red"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/shopping"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/shopping_selector"
+            android:gravity="center"
+            android:text="shopping"
+            android:textColor="@color/font_red"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/classification"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/classification_selector"
+            android:gravity="center"
+            android:text="classification"
+            android:textColor="@color/font_red"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/my"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/me_selector"
+            android:gravity="center"
+            android:text="My"
+            android:textColor="@color/font_red"
+            tools:ignore="HardcodedText" />
+
+    </RadioGroup>
+
+
+</RelativeLayout>
